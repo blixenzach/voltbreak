@@ -880,7 +880,9 @@ const Platform = {
  */
 const Analytics = (() => {
   const code = CONFIG.analytics.goatcounter;
-  const on = !!code && Platform.hosted();
+  // Automated browsers (website scanners, test robots) are not players: keep them out of the numbers.
+  const robot = navigator.webdriver === true || /bot|crawl|spider|slurp|headless|lighthouse|phantom|selenium|puppeteer|playwright/i.test(navigator.userAgent);
+  const on = !!code && Platform.hosted() && !robot;
   const KEY = 'zak-breakout.pending';
   let pending = [];
   try { pending = JSON.parse(localStorage.getItem(KEY) || '[]'); if (!Array.isArray(pending)) pending = []; } catch (e) { pending = []; }
