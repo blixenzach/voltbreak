@@ -1,6 +1,6 @@
 /* Zak Breakout service worker: keeps a copy of the game on the device so it opens offline.
    The version below changes with every build, so players get updates on their next visit. */
-const CACHE = 'zak-breakout-7291ebbcbd';
+const CACHE = 'zak-breakout-ec2ff45709';
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./favicon-32.png", "./apple-touch-icon.png", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 
 self.addEventListener('install', (e) => {
