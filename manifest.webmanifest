@@ -2,7 +2,7 @@
   "id": "./",
   "name": "Zak Breakout",
   "short_name": "Zak Breakout",
-  "description": "A neon arcade brick-breaker: a 30-level journey through 30 worlds, 3 bosses, 3 difficulties. Free to play on your phone, even offline.",
+  "description": "A neon arcade brick-breaker: a 500-level journey through 30 worlds, 10 boss fights, 3 difficulties. Free to play on your phone, even offline.",
   "start_url": "./",
   "scope": "./",
   "display": "fullscreen",
