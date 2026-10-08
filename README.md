@@ -1,5 +1,5 @@
-# Zak Breakout
+# Voltbreak
 
-Play: https://blixenzach.github.io/zak-breakout/
+Play: https://blixenzach.github.io/voltbreak/
 
-© 2026 Zak Breakout. All rights reserved.
+© 2026 Voltbreak. All rights reserved.

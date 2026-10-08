@@ -1,6 +1,6 @@
-/* Zak Breakout service worker: keeps a copy of the game on the device so it opens offline.
+/* Voltbreak service worker: keeps a copy of the game on the device so it opens offline.
    The version below changes with every build, so players get updates on their next visit. */
-const CACHE = 'zak-breakout-6e22b7b5be';
+const CACHE = 'voltbreak-6f38a75361';
 const ASSETS = ["./", "./index.html", "./manifest.webmanifest", "./favicon-32.png", "./apple-touch-icon.png", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 
 self.addEventListener('install', (e) => {
@@ -9,7 +9,7 @@ self.addEventListener('install', (e) => {
 
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys()
-    .then((keys) => Promise.all(keys.filter((k) => k.startsWith('zak-breakout-') && k !== CACHE).map((k) => caches.delete(k))))
+    .then((keys) => Promise.all(keys.filter((k) => (k.startsWith('voltbreak-') || k.startsWith('zak-breakout-')) && k !== CACHE).map((k) => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 

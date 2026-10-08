@@ -1,7 +1,7 @@
 {
   "id": "./",
-  "name": "Zak Breakout",
-  "short_name": "Zak Breakout",
+  "name": "Voltbreak",
+  "short_name": "Voltbreak",
   "description": "A neon arcade brick-breaker: a 500-level journey through 30 worlds, 10 boss fights, 3 difficulties. Free to play on your phone, even offline.",
   "start_url": "./",
   "scope": "./",
